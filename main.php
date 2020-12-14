@@ -35,7 +35,7 @@ if(!defined("DOKU_INC")){
 
 <div class="grid">
 
-    <div id="dokuwiki__aside" class="gridcolumn">
+    <div id="dokuwiki__side" class="gridcolumn">
         <div class="sidebar">
             <?php tpl_include_page($conf['sidebar'], 1, 1); ?>
         </div>
