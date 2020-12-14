@@ -38,7 +38,7 @@ if(!defined("DOKU_INC")){
 
     <!-- Page content -->
     <div id="dokuwiki__content" class="gridcolumn">
-        <?php tpl_flush(); tpl_includeFile("pageheader.html"); ?>
+        <?php tpl_flush(); ?>
         <div class="content">
             <?php tpl_content(); ?>
         </div>

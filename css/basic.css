@@ -17,6 +17,14 @@ a:visited {
     color: #0000ff;
 }
 
+.code {
+    padding: 3%;
+    font-size: 1.2em;
+    border-left: 6px solid;
+    border-color: #aaa;
+    background-color: #eee;
+}
+
 .invisible {
     display: none;
     visibility: hidden;
