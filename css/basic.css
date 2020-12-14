@@ -27,9 +27,14 @@ a:visited {
 .code {
     padding: 3%;
     font-size: 1.2em;
-    border-left: 6px solid;
-    border-color: #aaa;
+    border-left: 6px solid #aaa;
     background-color: #eee;
+}
+
+blockquote {
+    padding: 3%;
+    background-color: #eee;
+    border-left: 6px solid #aaa;
 }
 
 .invisible {
