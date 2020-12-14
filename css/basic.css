@@ -1,7 +1,13 @@
-body {
+#page {
     /* Basically, we don't want to take up too much space */
     margin: 5%;
     margin-top: 2%;
+}
+
+/* Reset styling */
+:root {
+    padding: 0;
+    margin: 0;
 
     /* Font setup */
     font-family: sans-serif;
@@ -45,6 +51,10 @@ a:visited {
     height: auto; 
 }
 
+.center-text {
+    text-align: center;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -57,3 +67,14 @@ a:visited {
         grid-area: 1 / 1 / 2 / 3; 
         margin: 5%;
     } 
+
+.head {
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-color: #aaa;
+    border-bottom: 3px solid;
+    background-color: #eee;
+}

@@ -26,12 +26,17 @@ if(!defined("DOKU_INC")){
 <!-- Page start, plugin conpatible -->
 <div id="dokuwiki__top" class="site <?php echo tpl_classes(); ?>">
 
+<a href="#dokuwiki__content" class="sr-only"><?php echo $lang['skip_to_content'] ?></a>
+<div class="head">
+    <h1 class="center-text"><?php echo strip_tags($conf['title']); ?></h1>
+</div>
+
+<div id="page">
+
 <div class="grid">
 
     <div id="dokuwiki__aside" class="gridcolumn">
-        <a href="#dokuwiki__content" class="sr-only"><?php echo $lang['skip_to_content'] ?></a>
-        <div class="pad aside include group">
-            <h1><?php echo strip_tags($conf['title']); ?></h1>
+        <div class="sidebar">
             <?php tpl_include_page($conf['sidebar'], 1, 1); ?>
         </div>
     </div>
@@ -53,6 +58,8 @@ if(!defined("DOKU_INC")){
             ?>
         </ul>
     </div>
+
+</div>
 
 </div>
 
