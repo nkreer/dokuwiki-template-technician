@@ -26,18 +26,24 @@ if(!defined("DOKU_INC")){
 <!-- Page start, plugin conpatible -->
 <div id="dokuwiki__top" class="site <?php echo tpl_classes(); ?>">
 
-<a href="#dokuwiki__content" class="sr-only"><?php echo $lang['skip_to_content'] ?></a>
+<a href="#dokuwiki__content" class="skiplink"><?php echo $lang['skip_to_content'] ?></a>
 <div class="head">
-    <h1 class="center-text"><?php echo strip_tags($conf['title']); ?></h1>
+    <a href="start"><h1 class="center-text"><?php echo strip_tags($conf['title']); ?></h1></a>
 </div>
 
 <div id="page">
 
 <div class="grid">
 
-    <div id="dokuwiki__side" class="gridcolumn">
-        <div class="sidebar">
-            <?php tpl_include_page($conf['sidebar'], 1, 1); ?>
+    <div id="dokuwiki__aside" class="gridcolumn">
+        <?php tpl_flush(); ?>
+        <br><br>
+        <div class="sidebar-wrapper">
+            <input tabindex="0" id="nav-collapsible" class="collapsible-toggle" type="checkbox" checked>
+            <label for="nav-collapsible" class="collapsible-toggle-text">Navigation</label>
+            <div class="sidebar">
+                <?php tpl_include_page($conf['sidebar'], 1, 1); ?>
+            </div>
         </div>
     </div>
 
@@ -45,6 +51,7 @@ if(!defined("DOKU_INC")){
     <div id="dokuwiki__content" class="gridcolumn">
         <?php tpl_flush(); ?>
         <div class="content">
+            <?php html_msgarea(); ?>
             <?php tpl_content(); ?>
         </div>
         <!-- Show the neccessary tools -->
