@@ -1,0 +1,51 @@
+body {
+    /* Basically, we don't want to take up too much space */
+    margin: 5%;
+    margin-top: 2%;
+
+    /* Font setup */
+    font-family: sans-serif;
+    line-height: 1.4em;
+}
+
+a {
+    text-decoration: none;
+    color: #0000ff;
+}
+
+a:visited {
+    color: #0000ff;
+}
+
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top:auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto; 
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .gridcolumn { 
+        grid-area: 1 / 1 / 2 / 3; 
+        margin: 5%;
+    } 
