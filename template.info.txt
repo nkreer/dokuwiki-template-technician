@@ -1,0 +1,7 @@
+base     technician
+author   nwng
+email    hallo@nwng.eu
+date     2020-12-14
+name     Technician Template
+desc     A simple and accessible template for personal websites
+url      https://nwng.eu/
